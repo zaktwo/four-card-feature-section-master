@@ -78,3 +78,83 @@ body{
 /*****************************************************
                     Variables
 *****************************************************/
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.intro{
+    display: flex;
+    text-align: center;
+    margin-bottom: 2rem;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-direction: column;
+}
+.intro > h1{
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+.intro > h1 > span{
+    color: black;
+    font-weight: 600;
+}
+.intro > p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+.cards-container{
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 4px 15px 5px #BDBDBD; 
+box-shadow: 4px 4px 15px 5px #BDBDBD;
+margin-bottom: 2rem;
+padding: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.cards-container > img{
+    
+  align-self: flex-end;
+}
+.cards-container > h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.cards-container > p {
+    color: var(--Grayish-Blue);
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+}
+.supervisor{
+    border-top: 5px solid var(--Cyan);
+    object-position: right bottom;
+}
+.team{
+    border-top: 5px solid var(--Red);
+    object-position: right bottom;
+}
+.krama{
+    border-top: 5px solid var(--Orange);
+    object-position: right bottom;
+}
+.calculator{
+    border-top: 5px solid var(--Blue);
+    object-position: right bottom;
+    object-fit: none;
+}
+
+/*****************************************************
+                    Media Queries
+*****************************************************/
+@media (min-width: 550px){
+    .card{
+        display: grid;
+    }
+}
